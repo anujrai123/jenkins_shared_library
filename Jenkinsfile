@@ -35,7 +35,7 @@ pipeline {
                 script {
                     // Using your shared library ansible.groovy
                     credentials("ansible-ssh-key") {
-                        ansible("install_jenkins.yml", params.SERVER_NAME, params.ACTION)
+                        ansible("install_ansible.yml", params.SERVER_NAME, params.ACTION)
                     }
                 }
             }
